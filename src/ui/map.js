@@ -817,6 +817,11 @@ class Map extends Camera {
         return this.style.getSource(id);
     }
 
+    // TODO write docs
+    addImage(name, image, width, height) {
+        this.style.spriteAtlas.addImage(name, image, width, height);
+    }
+
     /**
      * Adds a [Mapbox style layer](https://www.mapbox.com/mapbox-gl-style-spec/#layers)
      * to the map's style.

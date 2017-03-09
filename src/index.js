@@ -29,6 +29,8 @@ mapboxgl.supported = require('./util/browser').supported;
 const config = require('./util/config');
 mapboxgl.config = config;
 
+mapboxgl.ajax = require('./util/ajax');
+
 const rtlTextPlugin = require('./source/rtl_text_plugin');
 
 mapboxgl.setRTLTextPlugin = rtlTextPlugin.setRTLTextPlugin;
